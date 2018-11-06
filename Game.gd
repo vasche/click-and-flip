@@ -14,6 +14,7 @@ func _ready():
 #		print(i)
 		var c = card.instance()
 		c.card_name = str(i)
+		c.z_index = i
 		cards.append(c)
 		
 	print(cards)

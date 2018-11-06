@@ -7,7 +7,7 @@
 custom_solver_bias = 0.0
 extents = Vector2( 31.8599, 31.6497 )
 
-[node name="Flip" type="Area2D" index="0"]
+[node name="Flip" type="Area2D"]
 
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
@@ -17,7 +17,7 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 script = ExtResource( 1 )
-_sections_unfolded = [ "Transform" ]
+_sections_unfolded = [ "Transform", "Z Index" ]
 card_name = ""
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
