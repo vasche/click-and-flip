@@ -7,7 +7,7 @@
 custom_solver_bias = 0.0
 extents = Vector2( 31.8599, 31.6497 )
 
-[node name="Flip" type="Area2D"]
+[node name="Flip" type="Area2D" index="0"]
 
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
