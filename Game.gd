@@ -1,15 +1,22 @@
 extends Node2D
 
-# class member variables go here, for example:
-# var a = 2
-# var b = "textvar"
 var cards = []
 var posy = 100
 var posx = 100
 var card = preload("res://Flip.tscn")
+var play_cards = []
+var play_card = preload("res://Card.tscn")
+var pospx = 100
+var pospy = 500
 
 func _ready():
 	randomize()
+	for i in 10:
+		var pc = play_card.instance()
+		pc.init(Vector2(pospx, pospy))
+		play_cards.append(pc)	
+		add_child(pc)
+	
 	for i in 10:
 #		print(i)
 		var c = card.instance()
