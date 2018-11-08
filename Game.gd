@@ -7,16 +7,19 @@ var card = preload("res://Flip.tscn")
 var play_cards = []
 var play_card = preload("res://Card.tscn")
 var pospx = 100
-var pospy = 500
+var pospy = 300
 
 func _ready():
 	randomize()
-	for i in 10:
-		var pc = play_card.instance()
-		pc.init(Vector2(pospx, pospy))
-		play_cards.append(pc)	
-		add_child(pc)
-	
+	for i in G.texture_map:
+#TODO: fix empty texture
+		for j in i:
+			print(j)
+			var pc = play_card.instance()
+			pc.init(Vector2(pospx, pospy), j)
+			play_cards.append(pc)
+			add_child(pc)
+			pospx += 16
 	for i in 10:
 #		print(i)
 		var c = card.instance()
