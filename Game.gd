@@ -31,7 +31,8 @@ func _ready():
 		
 	print("ready ", self)
 
-
+func handle_next_level():
+    get_tree().change_scene("res://CardMap.tscn")
 #func _process(delta):
 #	# Called every frame. Delta is time since last frame.
 #	# Update game logic here.
