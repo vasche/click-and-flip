@@ -12,7 +12,6 @@ var pospy = 300
 func _ready():
 	randomize()
 	for i in G.texture_map:
-#TODO: fix empty texture
 		for j in i:
 			print(j)
 			var pc = play_card.instance()

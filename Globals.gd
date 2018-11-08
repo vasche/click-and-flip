@@ -15,14 +15,19 @@ func make_2d_array():
 	var array2d = []
 	var w = 0
 	var h = 0
+	var ccount = 0
 	for i in 6:
 		array2d.append([])
 		w = 140 * i
 		h = 0
 		for j in 10:
+			ccount += 1
+			if ccount > 53:
+				break
 			array2d[i].append(Vector2(w,h))
 			h += 190
 	return array2d
+	
 #func _process(delta):
 #	# Called every frame. Delta is time since last frame.
 #	# Update game logic here.
