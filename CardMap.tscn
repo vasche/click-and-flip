@@ -3,7 +3,7 @@
 [ext_resource path="res://CardMap.gd" type="Script" id=1]
 [ext_resource path="res://Grid.gd" type="Script" id=2]
 
-[node name="CardMap" type="Node2D"]
+[node name="CardMap" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
@@ -13,7 +13,7 @@ _sections_unfolded = [ "Transform" ]
 mode = 0
 tile_set = null
 cell_size = Vector2( 140, 190 )
-cell_quadrant_size = 16
+cell_quadrant_size = 7
 cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 cell_half_offset = 2
 cell_tile_origin = 0
@@ -28,6 +28,6 @@ occluder_light_mask = 1
 format = 1
 tile_data = PoolIntArray(  )
 script = ExtResource( 2 )
-_sections_unfolded = [ "Cell" ]
+_sections_unfolded = [ "Cell", "Visibility" ]
 
 
