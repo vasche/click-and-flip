@@ -25,14 +25,14 @@ func _ready():
 		var c = card.instance()
 		c.card_name = str(i)
 		c.z_index = i
+		c.position = Vector2(posx, posy) 
 		cards.append(c)
-		
-	print(cards)
-	for c in cards:
-		c.position = Vector2(posx, posy)   
 		add_child(c)
 		posx += 64
+		
 	print("ready ", self)
+
+
 #func _process(delta):
 #	# Called every frame. Delta is time since last frame.
 #	# Update game logic here.
