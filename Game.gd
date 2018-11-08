@@ -44,3 +44,7 @@ func _process(delta):
 
 func _on_Timer_timeout():
 	handle_next_level()
+
+
+func _on_Button_pressed():
+	$Timer.stop()
