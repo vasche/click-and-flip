@@ -19,7 +19,7 @@ func _ready():
 			pc.init(Vector2(pospx, pospy), j)
 			play_cards.append(pc)
 			add_child(pc)
-			pospx += 16
+			pospx += 30
 	for i in 10:
 #		print(i)
 		var c = card.instance()

@@ -18,7 +18,7 @@ func make_2d_array():
 	for i in 6:
 		array2d.append([])
 		w = 140 * i
-		h = 190 * i
+		h = 0
 		for j in 10:
 			array2d[i].append(Vector2(w,h))
 			h += 190
